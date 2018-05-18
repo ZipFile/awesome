@@ -629,7 +629,7 @@ function rules.execute(c, props, callbacks)
     -- the outcome.
     c:emit_signal("request::tag", nil, {reason="rules"})
 
-    -- By default, rc.lua uses no_overlap+no_offscreen placement. This has to
+    -- By default, rc.lua uses no_offscreen+no_overlap placement. This has to
     -- be executed before x/y/width/height/geometry as it would otherwise
     -- always override the user specified position with the default rule.
     if props.placement then

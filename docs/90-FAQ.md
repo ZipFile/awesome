@@ -301,11 +301,11 @@ layout and allows to change it by clicking on it.
 
 In the default `awful.rules`-rule, the following placement is specified:
 
-    placement = awful.placement.no_overlap+awful.placement.no_offscreen
+    placement = awful.placement.no_offscreen+awful.placement.no_overlap
 
 You can prepend `awful.placement.under_mouse` to this:
 
-    placement = awful.placement.under_mouse+awful.placement.no_overlap+awful.placement.no_offscreen
+    placement = awful.placement.under_mouse+awful.placement.no_offscreen+awful.placement.no_overlap
 
 ### How to switch to a specific layout in a keybinding?
 

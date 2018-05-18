@@ -212,7 +212,7 @@ local placement_private = {}
 -- The module is a proxy in front of the "real" functions.
 -- This allow syntax like:
 --
---    (awful.placement.no_overlap + awful.placement.no_offscreen)(c)
+--    (awful.placement.no_offscreen + awful.placement.no_overlap)(c)
 --
 placement = setmetatable({}, {
     __index = placement_private,

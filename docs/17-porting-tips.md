@@ -353,7 +353,7 @@ The default rules need to be changed to avoid having offscreen clients:
                           keys = clientkeys,
      +                     buttons = clientbuttons,
      +                     screen = `awful.screen.preferred`,
-     +                     placement = `awful.placement.no_overlap`+`awful.placement.no_offscreen`
+     +                     placement = `awful.placement.no_offscreen`+`awful.placement.no_overlap`
 
 The `tags` global table has been removed to support dynamic screens, you can
 now access tags by name.

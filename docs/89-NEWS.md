@@ -795,7 +795,7 @@ configuration</a>.
 
 And add the following to the global rc.lua `awful.rule` section:
 
-    placement = awful.placement.no_overlap+awful.placement.no_offscreen
+    placement = awful.placement.no_offscreen+awful.placement.no_overlap
 
 Also note that this is the new official syntax for placement functions in
 rules. It is recommended to remove existing ones that are used as callbacks and
@@ -804,8 +804,8 @@ move them to the `placement` rule property.
 **See:**
 
 * `awful.placement`
-* `awful.placement.no_overlap`
 * `awful.placement.no_offscreen`
+* `awful.placement.no_overlap`
 * `awful.rules`
 
 ### Screens are no longer static
